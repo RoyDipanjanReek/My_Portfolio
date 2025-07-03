@@ -36,5 +36,5 @@ export{
     DiceGame,
     blog,
     learning,
-    image
+    image,
 }
