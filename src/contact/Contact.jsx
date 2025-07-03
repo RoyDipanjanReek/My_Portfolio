@@ -47,7 +47,7 @@ function Contact() {
     }
 
     const formData = {
-      access_key: process.env.ACCESS_FILE,
+      access_key: import.meta.env.VITE_WEB3_ACCESS_KEY,
       userName,
       email,
       subject,
@@ -67,7 +67,7 @@ function Contact() {
 
     if (result.success) {
       setSuccessMsg(
-        `Thank you ${userName}, your message has been sent successfully!`
+        `Thank you, your message has been sent successfully!`
       );
       setErrMsg("");
       setUserName("");
