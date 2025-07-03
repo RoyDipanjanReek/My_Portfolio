@@ -1,4 +1,3 @@
-import React from "react";
 import Title from "../layout/Title";
 import ProjectCard from "./ProjectCard";
 

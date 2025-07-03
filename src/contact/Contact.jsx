@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Title from "../Components/layout/Title";
 import ContactLeft from "./ContactLeft";
-import { Button } from "react-scroll";
 
 function Contact() {
   const [userName, setUserName] = useState("");
@@ -15,28 +14,6 @@ function Contact() {
     return String(email)
       .toLocaleLowerCase()
       .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
-  };
-
-  const handleSend = (e) => {
-    e.preventDefault();
-    if (userName === "") {
-      setErrMsg("Your Name is required");
-    } else if (email === "") {
-      setErrMsg("Please give your Email!");
-    } else if (!emailValidation(email)) {
-      setErrMsg("Give a valid Email!");
-    } else if (subject === "") {
-      setErrMsg("Plese give your Subject!");
-    } else if (message === "") {
-      setErrMsg("Message is required!");
-    } else {
-      setSuccessMsg(`Thank you, Your Messages has been sent Successfully!`);
-      setErrMsg("");
-      setUserName("");
-      setEmail("");
-      setSubject("");
-      setMessage("");
-    }
   };
 
   const onSubmit = async (event) => {

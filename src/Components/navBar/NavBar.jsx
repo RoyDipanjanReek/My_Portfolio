@@ -25,7 +25,7 @@ function NavBar() {
   return (
     <div className="w-full sticky top-0 z-50 bg-bodyColors h-20 mx-auto flex justify-between items-center border-b-[1px] border-b-gray-600">
       <div className="pl-5 font-bold font-titleFont text-designColor text-3xl">
-       MY <span className="text-white">PORTFOLIO</span> 
+        MY <span className="text-white">PORTFOLIO</span>
       </div>
       <div>
         <ul className="hidden md:inline-flex  items-center gap-6 lgl:gap-10">

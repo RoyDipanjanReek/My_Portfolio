@@ -1,4 +1,3 @@
-import React from "react";
 
 function Title({ title, des }) {
   return (

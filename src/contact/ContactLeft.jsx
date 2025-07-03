@@ -30,8 +30,7 @@ function ContactLeft(props) {
           MERN Stack Developer
         </p>
         <p className="text-base text-gray-400 tracking-wide">
-           I
-          love connecting with like-minded developers to share ideas and
+          I love connecting with like-minded developers to share ideas and
           collaborate. Let’s create something extraordinary together—drop me a
           message!
         </p>

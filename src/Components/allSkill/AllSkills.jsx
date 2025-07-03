@@ -1,4 +1,3 @@
-
 import Title from "../layout/Title";
 import {
   photo1,

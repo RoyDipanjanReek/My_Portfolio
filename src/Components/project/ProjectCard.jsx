@@ -6,7 +6,7 @@ const projects = [
     // Learning Progress Tracker data is here
     id: "1",
     title: "Learning Progress Tracker",
-    des:"Develop a backend system that tracks user's progress in various courses, allowing users to view and update their learning milestones. ",
+    des: "Develop a backend system that tracks user's progress in various courses, allowing users to view and update their learning milestones. ",
     src: learning,
     githubURL: "https://github.com/RoyDipanjanReek/Learning_Progress_Tracker",
     deployURL: "",
@@ -40,7 +40,7 @@ function ProjectCard() {
     <React.Fragment>
       {projects.map(({ id, des, src, title, githubURL }) => (
         <div
-        onClick={() => handleRedirect(githubURL)}
+          onClick={() => handleRedirect(githubURL)}
           key={id}
           className="w-full p-4 xl:px-12 h-auto xl:py-10 rounded-lg shadow-shadowOne flex flex-col bg-gradient-to-r from-bodyColor to-[#202327] group hover:bg-gradient-to-b hover:from-gray-900 hover:gray-900 transition-colors duration-1000 border-y-2 border-white py-5"
         >
